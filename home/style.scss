@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+        width: 100%;
+        height: 20vh;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header__left {
+            width: 60%;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logoName h2 {
+                font-size: 52px;
+                text-transform: uppercase;
+                font-family: Pompiere;
+                text-shadow: 0 5px 5px #999;
+                margin-left: 50px;
+                color: #264653;
+                letter-spacing: 2.6px;
+            }
+
+            .nav {
+                width: 100%;
+                height: 20vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .nav a {
+                text-decoration: none;
+                margin: 0 50px;
+                font-size: 24px;
+                color: #000;
+                font-family: Podkova;
+                user-select: none;
+                font-weight: 400;
+                letter-spacing: 1.2px;
+            }
+
+            .nav a:nth-child(1) {
+                border-bottom: 2px solid #000;
+            }
+        }
+
+        .header__right {
+            width: 40%;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .language {
+                width: 57px;
+                height: 42px;
+                background-image: url(../img/language_Icon.png);
+                background-size: cover;
+                cursor: pointer;
+            }
+
+            .cart {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                .cart_text {
+                    margin: 0 0 0 20px;
+                    font-size: 24px;
+                    color: #FEFAE0;
+                    font-family: Podkova;
+                    user-select: none;
+                    font-weight: 400;
+                }
+
+                .cart_item {
+                    margin: 0 50px 0 5px;
+                    font-size: 24px;
+                    color: #FEFAE0;
+                    font-family: Podkova;
+                    user-select: none;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .page__sides {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left__side {
+            height: 100vh;
+            width: 70%;
+            background-color: #FEFAE0;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+
+            .text {
+                height: 234px;
+                width: 528px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                position: relative;
+                z-index: 100;
+
+                .welcome {
+                    color: #BC6C25;
+                    font-family: Podkova;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                    position: relative;
+                    top: 20px;
+                }
+
+                .title {
+                    color: #264653;
+                    font-family: Podkova;
+                    font-size: 52px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 2.3px;
+                }
+
+                .under_title {
+                    color: #000;
+                    font-family: Podkova;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+            }
+
+            .buttoms {
+                display: flex;
+                width: 450px;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                z-index: 100;
+
+                .shop_now {
+                    width: 150px;
+                    height: 50px;
+                    flex-shrink: 0;
+                    border-radius: 5px;
+                    border: 1px solid #FEFAE0;
+                    background: #606C38;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    color: #FEFAE0;
+                    font-family: Podkova;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                    text-transform: uppercase;
+                    user-select: none;
+                }
+
+                .shop_now:hover {
+                    background-color: #FEFAE0;
+                    border: 1px solid #606C38;
+                    color: #606C38;
+                }
+
+                .play_video {
+                    display: flex;
+                    height: 120px;
+                    width: 180px;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-right: 50px;
+                    cursor: pointer;
+
+                    .fa-circle-play {
+                        font-size: 32px;
+                    }
+                }
+
+                .play_video h2 {
+                    color: #000;
+                    font-family: Podkova;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                    user-select: none;
+                }
+
+            }
+        }
+
+        .right__side {
+            height: 100vh;
+            width: 30%;
+            background-color: #606C38;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .home_page_img{
+                width: 500px;
+                height: 500px;
+                background-image: url(../img/home_page_img.png);
+                background-size: cover;
+                position: relative;
+                z-index: 50;
+                border-top-left-radius : 110px;
+                border-bottom-right-radius : 110px;
+                right: 250px;
+            }
+        }
+    }
+
+}
